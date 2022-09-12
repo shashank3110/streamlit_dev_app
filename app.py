@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 st.title('Streamlit dashboard')
-df = pd.read_csv('data\Healthcare-Stroke-Data.csv')
+df = pd.read_csv('data/Healthcare-Stroke-Data.csv')
 n_rows = st.number_input('Number of rows',step=1)
 st.write(df.sample(n_rows))
 st.write(df.isnull().sum())
